@@ -2,7 +2,7 @@ const express = require('express');
 const authController = require("../controllers/authController");
 const userController = require("../controllers/userController");
 const transactionController = require("../controllers/transactionController");
-
+const healthController = require("../controllers/healthController");
 const router = express.Router();
 
 router.post('/getVerifyCode', authController.getVerifyCode);
@@ -21,6 +21,8 @@ router.get('/getVerifyCodeForTrxKeyUpdate', authController.getVerifyCodeForTrxKe
 router.patch('/updateTrxKey', authController.check2FACode, userController.updateTrxKey);
 router.post('/submitMessage', userController.submitMessage);
 
+// Health check
+router.get('/', healthController.healthCheck);
 router.get('/me',
   userController.getMe,
   userController.getUser

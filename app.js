@@ -12,6 +12,7 @@ const walletsRouter = require('./routes/walletRoutes');
 const transactionsRouter = require('./routes/transactionRoutes');
 const adminRouter = require('./routes/adminRoutes');
 const { testInterval } = require('./services/interval');
+const healthRouter = require('./routes/healthRoute');
 
 const app = express();
 // Serving statci files
@@ -56,6 +57,8 @@ app.use('/api/v1/wallets', walletsRouter);
 app.use('/api/v1/transactions', transactionsRouter);
 app.use('/api/v1/admin', adminRouter);
 
+// Check health
+app.use('/', healthRouter);
 
 
 // Handling unhandled Routes
