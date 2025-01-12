@@ -6,6 +6,7 @@ exports.healthCheck = async (req, res) => {
       status: 'success',
       data: {
         env: process.env.NODE_ENV,
+        test_env: process.env.TEST_ENV,
         message: 'Server is running'
       }
     });
