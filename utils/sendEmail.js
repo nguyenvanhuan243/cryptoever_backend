@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const HOST = process.env.HOST;
 const NO_REPLY_EMAIL = process.env.NO_REPLY_EMAIL;
 const USER = process.env.USER;
-const PASSWORD = process.env.PASSWORD;
+const PASSWORD = process.env.GMAIL_PASSWORD;
 const PORT = process.env.GMAIL_PORT;
 
 const sendEmail = async (data) => {
