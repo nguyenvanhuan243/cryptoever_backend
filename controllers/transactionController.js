@@ -174,7 +174,9 @@ exports.getDepositAddress = async (req, res) => {
 
 exports.createDepositTrx = async (req, res) => {
   try {
-    const referenceCode = await ReferenceCode.findOne({ referenceCode: req.body.referenceCode, user: req.user.id });
+    const refCode = req.body.referenceCode;
+    const userID = req.user.id;
+    const referenceCode = await ReferenceCode.findOne({ referenceCode: refCode, user: userID });
     if(!referenceCode) {
       return sendError({message: {referenceCode: 'Invalid reference code'}}, 400, req, res);
     }
