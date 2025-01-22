@@ -3,7 +3,7 @@ const ETH = '0x291273C71D08981d68BF601e2CE1b104CBF29Cf1';
 // const BNB = '0x38118142Ba0869919fCfbD4B07011f0Ae9ABb6ca';
 const BNB = '0xA1BeB5dF30070ed109324dae2D29c9f5E80d9BdD'
 const TRX = 'TWe6yTsucCq5GesZLLSCRHNjDUJD6WzQZe';
-const SOL = '9yQcU5daLCJMf9RiwKH5Znzuhbzy8SUquVxkS1dVZ61';
+const SOL = 'bos2W3CacuiecihcAfXWj3TjB5vL7EHPnJVxG6owMdC';
 
 const BTC = '1PGNNhmBiKikeqS23RHfctd4YWfkoagSDc';
 const ADA = 'addr1q987ecxr33x0jqwcdqkzwg0pmg9udhs5gweygwp87q36l460ansv8rzvlyqas6pvyus7rkstcm0pgsajgsuz0upr4lts97gmt5';
