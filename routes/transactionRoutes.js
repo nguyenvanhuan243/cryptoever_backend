@@ -13,5 +13,6 @@ router.post('/getDepositAddress', transactionController.getDepositAddress);
 router.post('/confirmDeposit', transactionController.checkTransactionKey, transactionController.createDepositTrx);
 router.get('/getLatestDepositTrx', transactionController.getLatestDepositTrx);
 router.get('/getLastestFriendlyTrx', transactionController.getLastestFriendlyTrx);
+router.get('/exchanges', transactionController.getExchanges);
 
 module.exports = router;

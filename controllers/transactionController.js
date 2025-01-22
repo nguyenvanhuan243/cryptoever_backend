@@ -238,3 +238,15 @@ exports.getLatestDepositTrx = async (req, res) => {
     sendError(err, 400, req, res);
   }
 };
+
+exports.getExchanges = async (req, res) => {
+  res.status(200).json({
+    status: 'success',      
+    data: {
+      exchanges: {
+        binance: "Binance exchange",
+        bitmart: "Bitmark exchange"
+      }
+    }
+  });
+}
